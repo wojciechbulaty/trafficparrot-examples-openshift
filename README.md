@@ -76,8 +76,10 @@ Note that you must set build arguments:
 git clone https://github.com/trafficparrot/trafficparrot-examples-openshift.git
 cd trafficparrot-examples-openshift
 
+cp ~/Downloads/trafficparrot-<fill this in>.zip .
+
 docker build \
---build-arg TRAFFIC_PARROT_ZIP=<fill this in> \
+--build-arg TRAFFIC_PARROT_ZIP=trafficparrot-<fill this in>.zip \
 --build-arg ACCEPT_LICENSE=<fill this in> \
 --tag trafficparrot:4.1.6 \
 --file openshift/trafficparrot/Dockerfile .
