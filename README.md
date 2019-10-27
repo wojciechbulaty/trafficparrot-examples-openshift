@@ -73,6 +73,9 @@ Note that you must set build arguments:
 1. `ACCEPT_LICENSE` should be set to `true` if you accept the terms of the [LICENSE](LICENSE)
 
 ```
+git clone https://github.com/trafficparrot/trafficparrot-examples-openshift.git
+cd trafficparrot-examples-openshift
+
 docker build \
 --build-arg TRAFFIC_PARROT_ZIP=<fill this in> \
 --build-arg ACCEPT_LICENSE=<fill this in> \
