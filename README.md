@@ -73,9 +73,11 @@ Note that you must set build arguments:
 1. `ACCEPT_LICENSE` should be set to `true` if you accept the terms of the [LICENSE](LICENSE)
 
 ```
+# If you have not cloned this project yet, you can do it now
 git clone https://github.com/trafficparrot/trafficparrot-examples-openshift.git
 cd trafficparrot-examples-openshift
 
+# You will need Traffic Parrot ZIP file here as well (see above for trial download link)
 cp ~/Downloads/trafficparrot-<fill this in>.zip .
 
 docker build \
